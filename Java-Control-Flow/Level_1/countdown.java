@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CountdownWhile {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input countdown value
+        System.out.print("Enter countdown value: ");
+        int counter = sc.nextInt();
+
+        // While loop countdown
+        while (counter >= 1) {
+            System.out.println(counter);
+            counter--;
+        }
+
+        System.out.println("Rocket Launched!");
+        sc.close();
+    }
+}
